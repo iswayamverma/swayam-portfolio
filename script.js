@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const typedEl = document.getElementById('typed');
   if (typedEl) {
     // ✏️ REPLACE: Your actual roles/skills
-    const words   = ['Web Applications.', 'REST APIs.', 'React Interfaces.', 'Full-Stack Projects.'];
+    const words   = ['Agentic AI Systems.', 'Backend APIs.', 'Spring Boot Products.', 'Real-World Software.'];
     let   wIndex  = 0;
     let   cIndex  = 0;
     let   deleting = false;
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const target = parseInt(el.dataset.target, 10);
     const duration = 1500; // ms
     const step = target / (duration / 16);
-    let current = 0;
+    let current = parseInt(el.textContent, 10) || 0;
     const timer = setInterval(() => {
       current += step;
       if (current >= target) {

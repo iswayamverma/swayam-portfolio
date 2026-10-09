@@ -763,6 +763,10 @@ img {
   transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
 }
 
+.project-card.flagship {
+  order: -1;
+}
+
 .project-card:hover {
   transform: translateY(-8px);
   border-color: rgba(56,189,248,0.3);
